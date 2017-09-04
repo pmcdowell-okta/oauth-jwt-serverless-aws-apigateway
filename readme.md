@@ -1,6 +1,6 @@
 ![Okta](./images/logo.png)
 
-#Serverless based Amazon API Gateway Authorizer
+# Serverless based Amazon API Gateway Authorizer
 
 This project is a very generic and simple example of how to write
 an Amazon API Gateway Authorizer that can accept Token minted 
@@ -13,14 +13,14 @@ for educational purposes*
 This project is loosely based on work done by Karl McGuiness
 which can be found here: https://github.com/mcguinness/node-lambda-oauth2-jwt-authorizer
 
-####The goals of this project are to:
+#### The goals of this project are to:
 
 * Get people familair with the **Serverless Framework** and **Amazon API Gateway**
 * A Simple example of an Authorizer Lambda function
 * Easy to deploy (Works on any **Okta** Instance **by Design**)
 * Accepts **OIDC** or **Oauth Tokens**
 
-####What is the Serverless Framework ?
+#### What is the Serverless Framework ?
 
 Basically, the Serverless Framework makes it easy to deploy services to 
 many cloud services. Amazon, Azure, Google Cloud, and OpenSwift are all
