@@ -1,0 +1,37 @@
+service: authorizerTest2 # NOTE: update this with your service name
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+plugins:
+  - serverless-offline
+
+functions:
+
+# For testing, this just checks that there is a Token being passed in the reqeust
+  token-only:
+    handler: authorizer-token-only.auth
+
+  token-signature:
+    handler: authorizer-token-signature.jwtverify
+
+
+  test:
+    handler: handler.handler
+    events:
+      - http:
+          path: test
+          method: get
+          integration: lambda
+          authorizer: token-signature
+          cors:
+            origins:
+              - '*'
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+

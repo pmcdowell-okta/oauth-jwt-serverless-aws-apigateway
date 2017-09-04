@@ -1,0 +1,9 @@
+{
+  "name": "my-awesome-package",
+  "version": "1.0.0",
+  "dependencies": {
+    "jws": "3.1.4",
+    "pem-jwk": "1.5.1",
+    "request": "2.78.0"
+  }
+}
