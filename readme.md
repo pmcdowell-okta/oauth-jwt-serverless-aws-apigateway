@@ -32,13 +32,13 @@ and deploy them using a simple YAML file called **serverless.yml**
 The serverless.yml defines which cloud service is being used, and pushes
 the code to that service, which saves tons of work for us.
 
-####What is this doing ?
+#### What is this doing ?
 
 1. Creates an API Gateway
 2. Defines a Authorizer which looks for a token in the header of a reqeust, and verifies that signature *(A Lambda as well)*
 3. Defines a backend service (A Lambda function in this case)
 
-####How to deploy
+#### How to deploy
 
 Use the command **sls deploy** to deploy this project to Amazon
 
@@ -62,10 +62,10 @@ region: us-east-1
 api keys:
   None
 endpoints:
-  GET - https://abntjchne0.execute-api.us-east-1.amazonaws.com/dev/testy
+  GET - https://fakeurlonamazon.execute-api.us-east-1.amazonaws.com/dev/testy
 ```
 
-####How to test
+#### How to test
 
 You will need an Okta OIDC or Oauth Token, you can get a token from [OktaProxy.com](https://oktaproxy.com) or [Oktajwt.io](https://oktajwt.io) . 
 Or, you can get your own Okta Instance and generate your own Token
@@ -79,7 +79,7 @@ curl -X GET \
   -H 'cache-control: no-cache' 
 ```
 
-####How to put this into production ?
+#### How to put this into production ?
 
 Uncomment Lines 90-111 to Check:
 * Issuer
