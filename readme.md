@@ -13,14 +13,14 @@ for educational purposes*
 This project is loosely based on work done by Karl McGuiness
 which can be found here: https://github.com/mcguinness/node-lambda-oauth2-jwt-authorizer
 
-#### The goals of this project are to:
+### The goals of this project are to:
 
 * Get people familair with the **Serverless Framework** and **Amazon API Gateway**
 * A Simple example of an Authorizer Lambda function
 * Easy to deploy (Works on any **Okta** Instance **by Design**)
 * Accepts **OIDC** or **Oauth Tokens**
 
-#### What is the Serverless Framework ?
+### What is the Serverless Framework ?
 
 Basically, the Serverless Framework makes it easy to deploy services to 
 many cloud services. Amazon, Azure, Google Cloud, and OpenSwift are all
@@ -32,13 +32,13 @@ and deploy them using a simple YAML file called **serverless.yml**
 The serverless.yml defines which cloud service is being used, and pushes
 the code to that service, which saves tons of work for us.
 
-#### What is this doing ?
+### What is this doing ?
 
 1. Creates an API Gateway
 2. Defines a Authorizer which looks for a token in the header of a reqeust, and verifies that signature *(A Lambda as well)*
 3. Defines a backend service (A Lambda function in this case)
 
-#### How to deploy
+### How to deploy
 
 Use the command **sls deploy** to deploy this project to Amazon
 
