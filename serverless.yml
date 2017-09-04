@@ -4,14 +4,10 @@ provider:
   name: aws
   runtime: nodejs6.10
 
-plugins:
-  - serverless-offline
+#plugins:
+#  - serverless-offline
 
 functions:
-
-# For testing, this just checks that there is a Token being passed in the reqeust
-  token-only:
-    handler: authorizer-token-only.auth
 
   token-signature:
     handler: authorizer-token-signature.jwtverify
@@ -22,7 +18,7 @@ functions:
     events:
       - http:
           path: test
-          method: get
+          method: any
           integration: lambda
           authorizer: token-signature
           cors:
