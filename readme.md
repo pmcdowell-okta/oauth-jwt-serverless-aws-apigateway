@@ -35,7 +35,7 @@ the code to that service, which saves tons of work for us.
 ### What is this doing ?
 
 1. Creates an API Gateway
-2. Defines a Authorizer which looks for a token in the header of a reqeust, and verifies that signature *(A Lambda as well)*
+2. Defines a Authorizer which looks for a token in the header of a request, and verifies that signature *(A Lambda as well)*
 3. Defines a backend service (A Lambda function in this case)
 
 ### How to deploy
