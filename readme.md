@@ -15,7 +15,7 @@ which can be found here: https://github.com/mcguinness/node-lambda-oauth2-jwt-au
 
 ### The goals of this project are to:
 
-* Get people familair with the **Serverless Framework** and **Amazon API Gateway**
+* Get people familiar with the **Serverless Framework** and **Amazon API Gateway**
 * A Simple example of an Authorizer Lambda function
 * Easy to deploy (Works on any **Okta** Instance **by Design**)
 * Accepts **OIDC** or **Oauth Tokens**
@@ -35,7 +35,7 @@ the code to that service, which saves tons of work for us.
 ### What is this doing ?
 
 1. Creates an API Gateway
-2. Defines a Authorizer which looks for a token in the header of a reqeust, and verifies that signature *(A Lambda as well)*
+2. Defines an Authorizer which looks for a token in the header of a request, and verifies that signature *(A Lambda as well)*
 3. Defines a backend service (A Lambda function in this case)
 
 ### How to deploy
